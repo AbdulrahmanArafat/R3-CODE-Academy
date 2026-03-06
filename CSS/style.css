@@ -1,3 +1,7 @@
+/* ======================
+    Layout
+====================== */
+
 body{
     background-color: #001D39;
     height: 100vh;
@@ -8,9 +12,13 @@ body{
     margin: 0;
 }
 
+/* ======================
+    Header
+====================== */
+
 header{
     display: flex;
-    color:white;
+    color: white;
     font-size: 30px;
     align-items: center;
     justify-content: space-between;
@@ -18,82 +26,103 @@ header{
     margin-left: 50PX;
     width: 100vw;
 }
+
 .logo{
     width: 60px;
     height: 60px;
 }
 
-header nav a{
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-        margin-left:10px ;
-}
 .one{
     display: flex;
     align-items: center;
+}
 
-}
-header nav a:hover{
-    color: #7BB8E9;
-}
-.hero{
-    display: flex;
-    color:white;
-    font-size: 40px;
-    font-weight: bold;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 0px 30px 30px ;
-    align-content: center;
-}
+/* ======================
+    Navigation
+====================== */
 
 nav{
     display: flex;
     align-items: center;
 }
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+header nav a:hover{
+    color: #7BB8E9;
+}
+
+/* ======================
+    Menu
+====================== */
+
 .menu{
     background-color: #001D39;
     border: none;
     cursor: pointer;
     display: none;
 }
+
+#menu{
+    position: relative;
+}
+
+#menuLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menuLinks a{
+    padding: 5px;
+    margin: 0;
+    text-align: center;
+}
+
 .material-symbols-outlined{
     color: white;
-
 }
+
+/* ======================
+    Account Dropdown
+====================== */
+
 .account{
     position: relative;
 }
+
 .account-btn{
-    background:#0A4174;
+    background: #0A4174;
     color: white;
     font-size: 25px;
-    border:none;
+    border: none;
     padding: 5px 15px;
-    cursor:pointer;
+    cursor: pointer;
     margin: 10px;
     border-radius: 2%;
 }
 
 .dropdown{
-    position:absolute;
-    top:52px;
+    position: absolute;
+    top: 52px;
     right: 10px;
-    background:#49769F;
+    background: #49769F;
     width: 120px;
-    display:none;
-    flex-direction:column;
+    display: none;
+    flex-direction: column;
 }
 
 .dropdown a{
     display: block;
     font-size: 25px;
-    padding:10px 15px;
-    text-decoration:none;
-    color:white;
-
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
 }
 
 .borderAccount{
@@ -102,13 +131,56 @@ nav{
 }
 
 .account:hover .dropdown{
-    display:flex;
+    display: flex;
 }
+
+/* ======================
+    Hero Section
+====================== */
+
+.hero{
+    display: flex;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0px 30px 30px;
+    align-content: center;
+}
+
+/* ======================
+    Menu Toggle Class
+====================== */
+
+.showMenu{
+    display: flex !important;
+}
+
+/* ======================
+    Responsive
+====================== */
+
 @media (max-width: 1000px){
+
     .menu{
         display: flex;
     }
-    header nav a{
+
+    #menuLinks{
         display: none;
+        flex-direction: column;
+        position: absolute;
+        width: 110px;
+        flex-wrap: wrap;
+        background-color: #49769F;
+        top: 52px;
+        right: 12px;
     }
+
+    #menuLinks a{
+        width: 100%;
+    }
+
 }

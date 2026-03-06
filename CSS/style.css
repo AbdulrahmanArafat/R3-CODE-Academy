@@ -1,0 +1,115 @@
+body{
+    background-color: #001D39;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0;
+}
+header{
+    display: flex;
+    color:white;
+    font-size: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 50PX;
+    margin-left: 50PX;
+    width: 100vw;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+header nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        margin-left:10px ;
+}
+.one{
+    display: flex;
+    align-items: center;
+
+}
+header nav a:hover{
+    color: #7BB8E9;
+}
+.hero{
+    display: flex;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0px 30px 30px ;
+    align-content: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    background-color: #001D39;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+.material-symbols-outlined{
+    color: white;
+
+}
+.account{
+    position: relative;
+}
+.account-btn{
+    background:#0A4174;
+    color: white;
+    font-size: 25px;
+    border:none;
+    padding: 5px 15px;
+    cursor:pointer;
+    margin: 10px;
+    border-radius: 2%;
+}
+
+.dropdown{
+    position:absolute;
+    top:52px;
+    right: 10px;
+    background:#0A4174;
+    width: 120px;
+    display:none;
+    flex-direction:column;
+}
+
+.dropdown a{
+    display: block;
+    font-size: 25px;
+    padding:10px 15px;
+    text-decoration:none;
+    color:white;
+
+}
+
+.borderAccount{
+    border-bottom: 2px solid #001D39;
+    margin-left: 0;
+}
+
+.account:hover .dropdown{
+    display:flex;
+}
+@media (max-width: 1000px){
+    .menu{
+        display: flex;
+    }
+    header nav a{
+        display: none;
+    }
+    .menu:oncl{
+    }
+}

@@ -184,3 +184,138 @@ header nav a:hover{
     }
 
 }
+
+/* ======================
+    log in page
+====================== */
+.loginF{
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px white solid;
+    height: 500px;
+    width: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10%;
+    position: relative;
+    }
+
+.loginF p{
+
+    font-size:40px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0 0 30px 0;
+    
+}
+.loginF input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px white solid ;
+    border-radius: 30px;
+    font-size: 25px;
+    width: 320px;
+    height: 40px;
+    margin: 0 0 30px 0;
+}
+
+.loginF .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 320px;
+    height: 40px;
+
+    background-color: white;
+        margin: 0 0 30px 0;
+}
+.loginF .btn a{
+    text-decoration: none;
+        color: black;
+            font-size: 25px;
+}
+.loginF .lastbtn{
+    margin: 0 0 55px 0;
+}
+
+
+#forget{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 55px;
+    padding: 0;
+    margin: 0 0 0 0
+
+}
+
+
+/* ======================
+    singup
+====================== */
+.singupF{
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px white solid;
+    height: 600px;
+    width: 400px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10%;
+    position: relative;
+    }
+
+.singupF p{
+
+    font-size:40px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0 0 30px 0;
+    
+}
+.singupF input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px white solid ;
+    border-radius: 30px;
+    font-size: 25px;
+    width: 320px;
+    height: 40px;
+    margin: 0 0 30px 0;
+}
+
+.singupF button{
+    margin: 0;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    width: 320px;
+    height: 40px;
+}
+
+
+.singupF .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 320px;
+    height: 40px;
+
+    background-color: white;
+        margin: 0 0 30px 0;
+}
+.singupF .btn a{
+    text-decoration: none;
+        color: black;
+            font-size: 25px;
+}
+.singupF .lastbtn{
+    margin: 0 0 55px 0;
+}

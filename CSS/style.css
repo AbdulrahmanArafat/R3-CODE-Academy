@@ -194,6 +194,10 @@ header nav a:hover{
 /* ======================
     log in page
 ====================== */
+input::placeholder{
+    color: rgb(255, 255, 255);
+}
+
 .loginF{
     background-color: rgba(0, 0, 0, 0.0);
     border: 1px white solid;
@@ -224,6 +228,8 @@ header nav a:hover{
     width: 320px;
     height: 40px;
     margin: 0 0 30px 0;
+    color: white;
+    text-indent: 30px;
 }
 
 .loginF .btn{
@@ -297,6 +303,8 @@ header nav a:hover{
     width: 320px;
     height: 40px;
     margin: 0 0 30px 0;
+    color: white;
+    text-indent: 30px;
 }
 
 .singupF button{
@@ -374,6 +382,8 @@ text-align: center;
     width: 320px;
     height: 40px;
     margin: 0 0 30px 0;
+    color: white;
+    text-indent: 30px;
 }
 
 .reserPassword .btn{
@@ -434,6 +444,8 @@ text-align: center;
     width: 320px;
     height: 40px;
     margin: 0 0 30px 0;
+    color: white;
+    text-indent: 30px;
 }
 
 .otp .btn{
@@ -496,6 +508,8 @@ text-align: center;
     width: 320px;
     height: 40px;
     margin: 0 0 30px 0;
+    color: white;
+    text-indent: 30px;
 }
 
 .newPassword .btn{

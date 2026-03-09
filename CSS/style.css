@@ -335,3 +335,191 @@ header nav a:hover{
 .singupF .lastbtn{
     margin: 0 0 55px 0;
 }
+/* ======================
+    reset password
+====================== */
+
+    .reserPassword{
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px white solid;
+    height: 500px;
+    width: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10%;
+    position: relative;
+    }
+
+.reserPassword p{
+
+    font-size:40px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0 0 30px 0;
+    
+}
+.reserPassword h3{
+margin: 0 30px 30px 30px;
+text-align: center;
+}
+
+.reserPassword input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px white solid ;
+    border-radius: 30px;
+    font-size: 25px;
+    width: 320px;
+    height: 40px;
+    margin: 0 0 30px 0;
+}
+
+.reserPassword .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 320px;
+    height: 40px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    margin: 0 0 30px 0;
+
+}
+.reserPassword .btn a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+/* ======================
+    otp
+====================== */
+
+    .otp{
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px white solid;
+    height: 500px;
+    width: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10%;
+    position: relative;
+    }
+
+.otp p{
+
+    font-size:40px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0 0 30px 0;
+    
+}
+.otp h3{
+margin: 0 30px 30px 30px;
+text-align: center;
+}
+
+.otp input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px white solid ;
+    border-radius: 30px;
+    font-size: 25px;
+    width: 320px;
+    height: 40px;
+    margin: 0 0 30px 0;
+}
+
+.otp .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 320px;
+    height: 40px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    margin: 0 0 30px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.otp .btn a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+/* ======================
+    newPassword
+====================== */
+
+    .newPassword{
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 1px white solid;
+    height: 500px;
+    width: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10%;
+    position: relative;
+    }
+
+.newPassword p{
+
+    font-size:40px;
+    font-weight: bolder;
+    padding: 0;
+    margin: 0 0 30px 0;
+    
+}
+.newPassword h3{
+margin: 0 30px 30px 30px;
+text-align: center;
+}
+
+.newPassword input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px white solid ;
+    border-radius: 30px;
+    font-size: 25px;
+    width: 320px;
+    height: 40px;
+    margin: 0 0 30px 0;
+}
+
+.newPassword .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 320px;
+    height: 40px;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    margin: 0 0 30px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.newPassword  a{
+
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+

@@ -195,7 +195,77 @@ header nav a:hover{
     log in page
 ====================== */
 input::placeholder{
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.loginF input,
+.singupF input,
+.reserPassword input,
+.otp input,
+.newPassword input,
+.passwords {
+    width: 320px;
+    height: 52px;
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-size: 22px;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.loginF input,
+.singupF input,
+.reserPassword input,
+.otp input,
+.newPassword input {
+    margin: 0 0 30px 0;
+    padding: 0 20px;
+    outline: none;
+}
+
+.loginF input:focus,
+.singupF input:focus,
+.reserPassword input:focus,
+.otp input:focus,
+.newPassword input:focus,
+.passwords:focus-within {
+    border-color: #7BB8E9;
+    background-color: rgba(255, 255, 255, 0.09);
+    box-shadow: 0 0 0 4px rgba(123, 184, 233, 0.18);
+}
+
+.passwords {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 0 30px 0;
+    overflow: hidden;
+}
+
+.passwords input {
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent;
+    margin: 0;
+    padding: 0 52px 0 20px;
+    color: white;
+    font-size: 22px;
+    outline: none;
+    font-family: inherit;
+    text-indent: 0;
+    line-height: 52px;
+}
+
+.passwords .material-symbols-outlined {
+    position: absolute;
+    right: 16px;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
 }
 
 .loginF{
@@ -221,15 +291,7 @@ input::placeholder{
     
 }
 .loginF input{
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px white solid ;
-    border-radius: 30px;
-    font-size: 25px;
-    width: 320px;
-    height: 40px;
-    margin: 0 0 30px 0;
-    color: white;
-    text-indent: 30px;
+    text-align: left;
 }
 
 .loginF .btn{
@@ -296,15 +358,7 @@ input::placeholder{
     
 }
 .singupF input{
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px white solid ;
-    border-radius: 30px;
-    font-size: 25px;
-    width: 320px;
-    height: 40px;
-    margin: 0 0 30px 0;
-    color: white;
-    text-indent: 30px;
+    text-align: left;
 }
 
 .singupF button{
@@ -375,15 +429,7 @@ text-align: center;
 }
 
 .reserPassword input{
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px white solid ;
-    border-radius: 30px;
-    font-size: 25px;
-    width: 320px;
-    height: 40px;
-    margin: 0 0 30px 0;
-    color: white;
-    text-indent: 30px;
+    text-align: left;
 }
 
 .reserPassword .btn{
@@ -437,15 +483,7 @@ text-align: center;
 }
 
 .otp input{
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px white solid ;
-    border-radius: 30px;
-    font-size: 25px;
-    width: 320px;
-    height: 40px;
-    margin: 0 0 30px 0;
-    color: white;
-    text-indent: 30px;
+    text-align: left;
 }
 
 .otp .btn{
@@ -501,15 +539,7 @@ text-align: center;
 }
 
 .newPassword input{
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px white solid ;
-    border-radius: 30px;
-    font-size: 25px;
-    width: 320px;
-    height: 40px;
-    margin: 0 0 30px 0;
-    color: white;
-    text-indent: 30px;
+    text-align: left;
 }
 
 .newPassword .btn{
@@ -533,3 +563,4 @@ text-align: center;
     text-decoration: none;
     color: black;
 }
+

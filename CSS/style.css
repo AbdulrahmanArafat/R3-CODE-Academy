@@ -62,6 +62,23 @@ header nav a:hover{
     color: #7BB8E9;
 }
 
+.nav-link,
+.account-link{
+    border-radius: 14px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-link.is-active,
+.account-link.is-active{
+    color: #9fd3fb;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.nav-link.nav-disabled{
+    opacity: 0.45;
+    pointer-events: none;
+}
+
 /* ======================
     Menu
 ====================== */
@@ -898,4 +915,178 @@ text-align: center;
     color: black;
 }
 
-F0. +-
+.loginF .btn,
+.singupF .btn,
+.reserPassword .btn,
+.otp .btn,
+.newPassword .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 44px;
+    border-radius: 30px;
+    margin: 0 0 18px 0;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    color: #001D39;
+    background: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.loginF .btn:hover,
+.singupF .btn:hover,
+.reserPassword .btn:hover,
+.otp .btn:hover,
+.newPassword .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, 0.24);
+}
+
+.loginF .btn.secondary-action,
+.singupF .btn.secondary-action,
+.reserPassword .btn.secondary-action,
+.otp .btn.secondary-action,
+.newPassword .btn.secondary-action{
+    background: rgba(255, 255, 255, 0.06);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.loginF .btn.secondary-action:hover,
+.singupF .btn.secondary-action:hover,
+.reserPassword .btn.secondary-action:hover,
+.otp .btn.secondary-action:hover,
+.newPassword .btn.secondary-action:hover{
+    background: rgba(255, 255, 255, 0.12);
+}
+
+/* ======================
+    Books
+====================== */
+.library{
+    background: linear-gradient(180deg, rgba(16, 78, 133, 0.95), rgba(1, 28, 56, 0.96));
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
+    height: 230px;
+    width: 400px;
+    display: flex;
+    gap: 50px;
+    margin: 0 20px 20px 20px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.library:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 24px 42px rgba(0, 0, 0, 0.28);
+}
+
+.library .book{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.library .book .bookCover{
+    width: 150px;
+    height: 190px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 26px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.25);
+}
+
+.library .book .bookCover img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 18px;
+    filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.18));
+}
+
+.library .book .details{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+}
+
+.library .book .details h1{
+    margin: 0 0 8px 0;
+    font-size: 34px;
+    line-height: 1.05;
+}
+
+.library .book .details h2{
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+.library .book .details > div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.library .book .details div .btn {
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 38px;
+    border-radius: 30px;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.library .book .details div .btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+    background-color: #d9efff;
+}
+
+.library .book .details div .btn a{
+    text-decoration: none;
+    width: 100%;
+    text-align:center ;
+    color: #001D39;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+@media (max-width: 520px){
+    .library{
+        width: calc(100% - 32px);
+        height: auto;
+        margin: 0 16px 20px 16px;
+    }
+
+    .library .book{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .library .book .details > div{
+        align-items: center;
+    }
+}

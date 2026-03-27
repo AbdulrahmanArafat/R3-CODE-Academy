@@ -36,15 +36,20 @@ document.addEventListener("click", (event) => {
 let passwords = document.querySelectorAll(".passwords");
 
 for (let i = 0; i < passwords.length; i++) {
-    let span = passwords[i].querySelector("span");
+    let span = passwords[i].querySelector(".password-toggle-icon");
     let input = passwords[i].querySelector("input");
+    if (!span || !input) {
+        continue;
+    }
     span.onclick = function () {
         if (input.type === "password") {
             input.type = "text";
-            span.textContent = "visibility_off";
+            span.classList.remove("fa-eye");
+            span.classList.add("fa-eye-slash");
         } else {
             input.type = "password";
-            span.textContent = "visibility";
+            span.classList.remove("fa-eye-slash");
+            span.classList.add("fa-eye");
         }
     };
 }
